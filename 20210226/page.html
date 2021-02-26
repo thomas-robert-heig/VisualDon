@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation SVG</title>
+
+	<style>
+		@keyframes sunset {
+			from {
+				background: #313235;
+			}
+
+			to {
+				background-color: #684444;
+			}
+		}
+
+		@keyframes sunMove {
+			from {}
+		}
+
+		svg {
+			background-color: #684444;
+			animation-name: sunset;
+			animation-duration: 10s;
+		}
+
+		#sun:hover {
+			fill: white;
+		}
+	</style>
+
+</head>
+
+<body>
+	<svg id="svg" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="gradientPlanet" x1="0" y1="0" x2="1" y2="0.3" spreadMethod="pad">
+				<stop offset="0%" stop-color="indianred" />
+				<stop offset="100%" stop-color="#303133" />
+			</linearGradient>
+		</defs>
+
+		<defs>
+			<linearGradient id="gradientGround" x1="0" y1="0" x2="1" y2="0" spreadMethod="pad">
+				<stop offset="0%" stop-color="#685050" />
+				<stop offset="100%" stop-color="#222324" />
+			</linearGradient>
+		</defs>
+
+		<circle id="sun" cx="100" cy="300" r="60" fill="url(#gradientPlanet)" />
+		<path d="M 0 300 Q 150 200 300 300" fill="url(#gradientGround)" />
+	</svg>
+</body>
+
+<script>
+	const svg = document.getElementById("svg");
+	const sun = document.getElementById("sun");
+
+
+	for (let i = 0; i < 50; i++) {
+
+		let circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+		circle.setAttribute("cx", Math.random() * 300);
+		circle.setAttribute("cy", Math.random() * 300);
+		circle.setAttribute('r', Math.random() * 1.5);
+		circle.setAttribute("fill", "#e2dada");
+		circle.setAttribute("class", "star");
+
+
+		svg.prepend(circle);
+	}
+
+	const moveDown = element => {
+		let cy = Number(element.getAttribute('cy'));
+
+		if (cy >= 200)
+			element.setAttribute("cy", cy - 0.2);
+	}
+
+	const step = () => {
+		moveDown(sun);
+		requestAnimationFrame(step)
+	}
+
+	step();
+</script>
+
+</html>
