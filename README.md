@@ -3,4 +3,4 @@ _Repo git du cours de Visualisation des Données, HEIG-VD_
 
 ## Liens
 
-- [Repo du cours](https://github.com/idris-maps/heig-datavis-2021/tree/master/20210226)
+- [Repo du cours](https://github.com/idris-maps/heig-datavis-2021)
