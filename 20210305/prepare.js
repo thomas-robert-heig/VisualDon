@@ -12,4 +12,4 @@ const results = data.map(item => ({
 	abstention: percentage(absentationVoters(item), totalEligibleVoters(item))
 })).sort((a, b) => a.name - b.name)
 
-console.log(results);
+console.log(JSON.stringify(results));
