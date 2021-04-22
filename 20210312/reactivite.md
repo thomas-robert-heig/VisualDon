@@ -19,4 +19,4 @@ console.log(c);
 
 ## Comment l'utiliser en javascript ? Quelles alternatives ?
 
-On peut en faire via l'utilisation de Promesse (asynchrone), mais le plus simple est d'utiliser des bibilothèques comme RxJS, Bacon.js, Kefir, …
+On peut en faire via l'utilisation de Promesse (asynchrone), mais le plus simple est d'utiliser des bibilothèques comme RxJS, Bacon.js, Kefir, … Ou des frameworks: Svelte, react, observable, Vuejs
