@@ -1,8 +1,16 @@
 {
-  "dependencies": {
-    "d3": "^6.6.0"
-  },
-  "devDependencies": {
-    "fs": "^0.0.1-security"
-  }
+	"name": "visualdon",
+	"type": "module",
+	"version": "1.0.0",
+	"dependencies": {
+		"d3": "^6.6.0",
+		"rollup": "^2.45.2"
+	},
+	"devDependencies": {
+		"@rollup/plugin-json": "^4.1.0",
+		"fs": "^0.0.1-security"
+	},
+	"scripts": {
+		"build": "rollup -c"
+	}
 }
