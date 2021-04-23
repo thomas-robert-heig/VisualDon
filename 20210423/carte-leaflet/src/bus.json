@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-04-23T12:35:01Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667943160",
+        "bus": "yes",
+        "ele": "515",
+        "name": "Place du Nord",
+        "public_transport": "stop_position"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6370872,
+          46.5241265
+        ]
+      },
+      "id": "node/667943160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667943161",
+        "bus": "yes",
+        "ele": "515",
+        "name": "Place du Nord",
+        "public_transport": "stop_position",
+        "trolleybus": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6370483,
+          46.5254118
+        ]
+      },
+      "id": "node/667943161"
+    }
+  ]
+}
