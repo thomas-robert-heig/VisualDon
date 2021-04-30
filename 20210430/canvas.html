@@ -1,0 +1,43 @@
+<html>
+	<body style="margin: 0">
+		<canvas id="mon-dessin" style="background: #292626"></canvas>
+		<script>
+			const canvas = document.getElementById("mon-dessin");
+			const ctx = canvas.getContext("2d");
+			ctx.canvas.width = window.innerWidth;
+			ctx.canvas.height = window.innerHeight;
+
+			const WIDTH = canvas.width;
+			const HEIGHT = canvas.height;
+
+			let randomize = (min, max) => {
+				return Math.floor(Math.random() * (max - min)) + min;
+			};
+
+			let colors = [
+				"#9A9C9A",
+				"#B6B8B6",
+				"#D9DBD9",
+				"#cbf2f7",
+				"#FFFFF",
+				"#b2c8d1",
+				"#5f374e",
+			];
+
+			let drawLine = (x, y) => {
+				ctx.strokeStyle = colors[Math.floor(Math.random() * colors.length)];
+				ctx.beginPath();
+				ctx.moveTo(x, y);
+				ctx.lineTo(
+					x + randomize(-WIDTH / 2, WIDTH / 2),
+					y + randomize(-HEIGHT / 2, HEIGHT / 2)
+				);
+				ctx.stroke();
+			};
+
+			for (let i = 0; i < WIDTH; i++) {
+				drawLine(WIDTH / 2, HEIGHT / 2);
+			}
+		</script>
+	</body>
+</html>
