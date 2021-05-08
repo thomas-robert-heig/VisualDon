@@ -4,7 +4,8 @@
 	"version": "1.0.0",
 	"dependencies": {
 		"d3": "^6.6.0",
-		"rollup": "^2.45.2"
+		"rollup": "^2.45.2",
+		"surge": "^0.23.0"
 	},
 	"devDependencies": {
 		"@rollup/plugin-json": "^4.1.0",
