@@ -17,3 +17,18 @@ Collaborateur: [https://github.com/fly04]()
 * Storytelling: quel est le personnage "type" joué en faisant des moyennes avec les personnages des joueurs disponibles à travers l'API.
 * Données à extraire: race, classe, caractéristiques, sorts, capacités, armes, alignement, nom
 * Graphiques: matrices, en baton, piecharts
+
+## 21 mai
+
+* Adptation et traitement de la donnée
+
+## 21 juin
+
+* Commencé les premiers graphs avec d3: batons, piechart, matrices
+* Mise en place structure HTML et CSS
+
+## 22 juin
+
+* Mise en place des graphes en cohérence avec l'html et le css
+* Nettoyage et adaptation de la donnée 
+* Finalisation des détails
