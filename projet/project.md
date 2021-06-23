@@ -9,8 +9,8 @@ Collaborateur: [https://github.com/fly04]()
 * Thème général défini: traitement des données sur le jeu de rôle Donjon & Dragons
 
 **API:**
-* [](https://github.com/oganm/dnddata)
-* [](https://www.dnd5eapi.co/)
+* [https://github.com/oganm/dnddata]()
+* [https://www.dnd5eapi.co/]()
 
 ## 07 mai
 
